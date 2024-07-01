@@ -1,0 +1,24 @@
+[package]
+name = "signalmessagecounter"
+version = "0.1.0"
+authors = ["greendoescode <green@apolga.com>"]
+readme = "README.md"
+edition = "2021"
+description = "Rust CLI tool to count signal messages"
+keywords = ["utility", "signal", "command-line", "counter", "messages"]
+categories = ["command-line-utilities"]
+repository = "https://github.com/greendoescode/signalmessagecounter/"
+homepage = "https://github.com/greendoescode/signalmessagecounter/"
+license = "BSD-2-Clause"
+
+# this is for sites other than crates.io, who may still use it
+[badges]
+maintenance = { status = "actively-developed" }
+
+[dependencies]
+csv = "1.1"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+chrono = { version = "0.4", features = ["serde"] }
+
+
